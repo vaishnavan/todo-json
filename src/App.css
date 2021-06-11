@@ -1,38 +1,86 @@
-.App {
+.main_add_form{
   text-align: center;
+  margin: 20px 0;
+}
+.main_add_form textarea{
+  width: 400px;
+  height: 150px;
+  border: 3px solid #0080ff94;
+  padding: 10px;
+  font-size: 1rem;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.179) !important;
+  color: white !important;
+  font-family: "Courgette" !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main_add_form textarea:hover{
+  box-shadow: 0 0 10px #0080ff94;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.main_add_form button{
+  padding: 7px 20px;
+  font-size: 1rem;
+  margin: 5px 0;
+  border: none;
+  background-color:#0080ff94;
+  border-radius: 3px;
   color: white;
+  font-family: "Courgette" !important;
+}
+.noteResult p{
+  font-size: 1rem;
+}
+.main_add_form button:hover{
+  background-color:#0080ff;
+  cursor: pointer;
+}
+.main_output_data{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.main_data_flex{
+  border: 1px solid rgb(59, 59, 59);
+  width: 400px;
+  height: auto;
+  padding: 10px;
+  margin: 10px 0;
+  box-shadow: 0 0 2px rgba(0,0,0,0.5);
+}
+.tododelete, .todoedit{
+  cursor: pointer;
+  margin: 0 5px;
+}
+.main_data_flex .noteIcons{
+  position: relative;
+  bottom: 0;
 }
 
-.App-link {
-  color: #61dafb;
+.main_data_flex textarea{
+  width: 100%;
+  height: 100px;
+  border: 3px solid #0080ff94;
+  padding: 10px;
+  font-size: 1rem;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.179) !important;
+  color: white !important;
+  font-family: "Courgette" !important;
+}
+.noteResult{
+  text-align: center;
+  margin: 30px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width:600px) {
+  .main_add_form textarea{
+    width: 300px;
+    height: 100px;
   }
-  to {
-    transform: rotate(360deg);
+  .main_data_flex{
+    border: 1px solid rgb(59, 59, 59);
+    width: 300px;
+    height: auto;
+    padding: 10px;
   }
 }
