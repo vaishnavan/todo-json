@@ -5,7 +5,7 @@
 .main_add_form textarea{
   width: 400px;
   height: 150px;
-  border: 3px solid #0080ff94;
+  border: 3px solid gold;
   padding: 10px;
   font-size: 1rem;
   outline: none;
@@ -14,25 +14,38 @@
   font-family: "Courgette" !important;
 }
 
+.noteResult .highlight_status{
+  color: rgb(63, 63, 63);
+  float: right;
+  top: 0;
+  margin: -35px;
+  background-color: gold;
+  padding: 4px 10px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+  box-shadow: 0 0 8px gold;
+}
+
 .main_add_form textarea:hover{
-  box-shadow: 0 0 10px #0080ff94;
+  box-shadow: 0 0 10px gold;
 }
 .main_add_form button{
   padding: 7px 20px;
   font-size: 1rem;
   margin: 5px 0;
   border: none;
-  background-color:#0080ff94;
+  background-color:rgb(173, 153, 39);
   border-radius: 3px;
-  color: white;
+  color: black;
   font-family: "Courgette" !important;
 }
 .noteResult p{
   font-size: 1rem;
 }
 .main_add_form button:hover{
-  background-color:#0080ff;
+  background-color:gold;
   cursor: pointer;
+  transition: 1s;
 }
 .main_output_data{
   display: flex;
@@ -40,12 +53,12 @@
   flex-wrap: wrap;
 }
 .main_data_flex{
-  border: 1px solid rgb(59, 59, 59);
+  border: 1px solid gold;
   width: 400px;
   height: auto;
   padding: 10px;
   margin: 10px 0;
-  box-shadow: 0 0 2px rgba(0,0,0,0.5);
+  box-shadow: 0 0 8px gold;
 }
 .tododelete, .todoedit{
   cursor: pointer;
@@ -55,7 +68,19 @@
   position: relative;
   bottom: 0;
 }
-
+.search_notes{
+  text-align: center;
+  margin: 30px 0;
+}
+.search_notes input{
+  width: 300px;
+  padding: 8px;
+  background-color: rgba(0, 0, 0, 0.076) !important;
+  border: 1px solid rgb(206, 178, 19);
+  outline:none;
+  color: white;
+  font-family: "Courgette" !important;
+}
 .main_data_flex textarea{
   width: 100%;
   height: 100px;
@@ -70,6 +95,87 @@
 .noteResult{
   text-align: center;
   margin: 30px 0;
+}
+.main_output_data .empty_svgimg{
+  width: 300px;
+  height: 300px;
+}
+.noteResult .highlight_prioty{
+  float: left;
+  margin: -23px;
+  background-color: red;
+  color: black;
+  padding: 10px;
+  border-radius: 50%;
+  border: 3px solid gold;
+  box-shadow: 0 0 10px gold;
+}
+.highlight_important{
+  float: left;
+  margin: -23px;
+  background-color: orange;
+  color: black;
+  padding: 10px;
+  border-radius: 50%;
+  border: 3px solid gold;
+  box-shadow: 0 0 10px gold;
+}
+.important .important_red{
+  width: 10px;
+  height: 10px;
+  background: red;
+  border-radius: 50%;
+  box-shadow: 0 0 5px gold;
+}
+.important .important_orange{
+  width: 10px;
+  height: 10px;
+  background: orange;
+  border-radius: 50%;
+  box-shadow: 0 0 5px gold;
+}
+.important .important_green{
+  width: 10px;
+  height: 10px;
+  background: green;
+  border-radius: 50%;
+  box-shadow: 0 0 5px gold;
+}
+.highlight_relex{
+  float: left;
+  margin: -23px;
+  background-color: green;
+  color: black;
+  padding: 10px;
+  border-radius: 50%;
+  border: 3px solid gold;
+  box-shadow: 0 0 10px gold;
+}
+
+.important{
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+.important_info{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+.main_add_form select{
+  width: 250px;
+  border: 3px solid gold;
+  outline: none;
+  font-family: "Courgette" !important;
+  margin: 5px 0;
+  padding: 8px;
+  background-color: rgba(0, 0, 0, 0.076) !important;
+  color: white;
+}
+.main_add_form option{
+  background: rgba(0, 0, 0, 0.076) !important;
+  color: black;
 }
 
 @media (max-width:600px) {
